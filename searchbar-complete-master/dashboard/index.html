@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navigation">  
+         <span><a href=""><img src="./images/logo.png" alt="" class="logo"></a></span>
+            <ul>
+                <li><a href="#"> <i class="las la-box"></i>Products</a></li>
+                <li><a href="#"> <i class="las la-project-diagram"></i>Channels</a></li>
+                <li><a href="#"><i class="las la-cog"></i>Settings</a></li>
+                <li><a href="#"><i class="las la-sign-out-alt"></i>Logout</a></li>
+            </ul>
+
+        </div>
+
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle"><i class="las la-bars toggleBar" onclick="toggleMenu();"></i></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" placeholder="Search here">
+                        <i class="las la-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="./images/profile-pic.png" alt="">
+                </div>
+            </div>
+
+            <div class="container">
+            <div class="col-xs-12 col-md-12 col-sm-12">
+            <div class="row">
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                            <th>Price</th>
+                            <th>Cateogry</th>
+                            <th>Channels</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Iphone</td>
+                            <td>$300</td>
+                            <td>Electronics</td>
+                            <td>
+                                <a href="https://www.amazon.com/s?k=iphone7&ref=nb_sb_noss"> <img src="./images/amazon-logo.png" width="50px" alt="amazon logo">
+                                </a>
+                                
+                                <a href="https://www.ebay.com/sch/i.html?_from=R40&_trksid=p2380057.m570.l1313&_nkw=iphone+7&_sacat=0"> <img src="./images/EBay_logo.png" width="50px" alt="ebay logo"> 
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+            </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.logo {
+  width: 70px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box label {
+  position: absolute;
+  right: 0;
+  top: 0px;
+
+  line-height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  color: gray;
+  font-size: 23px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: -5px -5px 8px #edeff1, 5px 5px 10px #cacfd8;
+}
+
+.box label:hover {
+  box-shadow: -10px -10px 15px #edeff1, 5px 5px 15px #cacfd8;
+  transform: scale(1.1);
+}
+
+#check {
+  display: none;
+}
+
+.box input {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  font-size: 2rem;
+  padding-left: 20px;
+  padding-right: 80px;
+  color: gray;
+  box-shadow: -10px -10px 15px #edeff1, 10px 10px 15px #cacfd8;
+  transition: 0.5s;
+}
+
+.box input:focus {
+  box-shadow: -10px -10px 40px #edeff1, 10px 10px 40px #cacfd8;
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
+  .logo {
+    width: 38px;
+    top: 37%;
+  }
+  .box label {
+    width: 40px;
+    height: 40px;
+  }
+  .box input {
+    width: 230px;
+    height: 40px;
+    padding-right: 50px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+
+  .box input {
+    width: 280px;
+  }
+}
+
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .box input {
+    width: 340px;
+    height: 42px;
+  }
+}
+
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  box input {
+    width: 360px;
+  }
+  .box label {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .box label {
+    width: 45px;
+    height: 45px;
+  }
+  .box input {
+    width: 400px;
+    height: 45px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+
+  .logo {
+    top: 39.5%;
+  }
+
+  .box label {
+    width: 55px;
+    height: 55px;
+  }
+  .box input {
+    width: 550px;
+    height: 55px;
+  }
+}
